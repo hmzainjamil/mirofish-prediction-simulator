@@ -24,6 +24,58 @@
 
 </div>
 
+
+---
+
+## CONCEPTS
+
+| Concept | Description |
+|---|---|
+| **Prediction** | Core concept — primary building block of mirofish prediction simulator |
+| **Simulator** | Execution primitive handling simulator operations |
+| **Scenario** | Integration layer for scenario connectivity |
+| **Ooda** | Configuration and routing for OODA behavior |
+| **Claude Code** | Anthropic CLI — agentic coding and task execution |
+| **MCP** | Model Context Protocol — tool exposure standard |
+| **Skill** | Self-contained Claude Code capability module |
+| **Tier-0** | Free model routing: Groq → Ollama → DeepSeek |
+| **Context Window** | Token budget per session — managed via compression |
+| **Async Agent** | Background task agent — non-blocking parallel execution |
+
+---
+
+## 🔥 Hot Commands
+
+```bash
+# Clone and explore
+gh repo clone hmzainjamil/mirofish-prediction-simulator
+cd mirofish-prediction-simulator
+
+# Load as Claude Code skill
+cp -r . ~/.claude/skills/mirofish-prediction-simulator/
+
+# Run via MAE pipeline
+mae run "mirofish prediction simulator - primary workflow"
+
+# Quick invoke via Claude
+claude -p "using prediction capabilities: run main workflow"
+```
+
+## ■ tip
+> **Route sub-tasks to Tier-0 first** (Groq/Ollama) — saves Claude quota for synthesis only. Use `mae run` to auto-decompose complex tasks.
+
+---
+
+## ☠️ STARTUPS / BUSINESSES
+
+- **Digital agencies** — deploy as client delivery multiplier, 10× throughput
+- **SaaS founders** — integrate into existing Claude Code stack, zero infra overhead
+- **AI engineers** — fork and extend with custom domain logic
+- **Freelancers** — use as billable-hours accelerator for prediction + simulator work
+
+---
+
+
 ## ⚡ Overview
 
 **MiroFish** is a next-generation AI prediction engine powered by multi-agent technology. By extracting seed information from the real world (such as breaking news, policy drafts, or financial signals), it automatically constructs a high-fidelity parallel digital world. Within this space, thousands of intelligent agents with independent personalities, long-term memory, and behavioral logic freely interact and undergo social evolution. You can inject variables dynamically from a "God's-eye view" to precisely deduce future trajectories — **rehearse the future in a digital sandbox, and win decisions after countless simulations**.
