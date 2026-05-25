@@ -14,14 +14,14 @@
 
 | Concept | Description |
 |---|---|
-| **Prediction** | Core prediction capability for mirofish-prediction-simulator workflows |
-| **Simulator** | Core simulator capability for mirofish-prediction-simulator workflows |
-| **Scenario** | Core scenario capability for mirofish-prediction-simulator workflows |
-| **Forecast** | Core forecast capability for mirofish-prediction-simulator workflows |
-| **Model** | Core model capability for mirofish-prediction-simulator workflows |
-| **Mirofish** | Core mirofish capability for mirofish-prediction-simulator workflows |
-| **Claude** | Core claude capability for mirofish-prediction-simulator workflows |
-| **Analysis** | Core analysis capability for mirofish-prediction-simulator workflows |
+| **MiroFish** | Prediction simulation framework by HMZ |
+| **Scenario** | Define future states with probability weights |
+| **Monte Carlo** | Statistical simulation across 1000+ runs |
+| **Forecast** | Time-series prediction with confidence intervals |
+| **Variables** | Define key drivers and their ranges |
+| **Sensitivity** | Find which inputs most impact outcomes |
+| **Report** | Auto-generate executive scenario summary |
+| **Decision Tree** | Visual branching outcome paths |
 
 ---
 
@@ -46,19 +46,19 @@ claude 'what can mirofish-prediction-simulator do?'
 ## ☠️ STARTUPS / BUSINESSES
 
 - **Agencies**: automate prediction workflows for clients at scale
-- **Founders**: ship simulator features 10x faster with Claude
-- **Freelancers**: deliver scenario work with AI-assisted precision
+- **Founders**: ship simulator features 10x faster
+- **Freelancers**: deliver scenario work with AI precision
 
 ---
 
 ## Features
 
-- Prediction automation and orchestration
-- Simulator automation and orchestration
-- Scenario automation and orchestration
-- Forecast automation and orchestration
-- Model automation and orchestration
-- Mirofish automation and orchestration
+- Prediction automation
+- Simulator automation
+- Scenario automation
+- Forecast automation
+- Model automation
+- Mirofish automation
 
 ---
 
@@ -74,9 +74,14 @@ cd mirofish-prediction-simulator
 ## Usage
 
 ```bash
-# In Claude Code
-/mirofish-prediction-simulator
-claude 'prediction task here'
+# Activate skill in Claude Code
+claude --skill mirofish-prediction-simulator "your task here"
+
+# Quick workflow
+claude "prediction automation task"
+
+# Get help
+claude "what can mirofish-prediction-simulator do?"
 ```
 
 ---
@@ -85,11 +90,11 @@ claude 'prediction task here'
 
 | Variable | Description | Default |
 |---|---|---|
-| `API_KEY` | Primary API key for service access | Required |
+| `API_KEY` | Primary API key | Required |
 | `MODEL` | AI model to use | claude-3-5-sonnet |
-| `DEBUG` | Enable verbose debug output | false |
-| `MAX_TOKENS` | Max token budget per request | 8192 |
-| `TIMEOUT` | Request timeout in seconds | 30 |
+| `DEBUG` | Enable verbose debug | false |
+| `MAX_TOKENS` | Max token budget | 8192 |
+| `TIMEOUT` | Request timeout (sec) | 30 |
 | `LOG_LEVEL` | Logging verbosity | info |
 
 ---
@@ -98,40 +103,36 @@ claude 'prediction task here'
 
 ```
 mirofish-prediction-simulator/
-├── README.md           # This file
+├── README.md           # Documentation
 ├── SKILL.md            # Claude Code skill definition
-├── scripts/            # Automation and utility scripts
-├── templates/          # Output and prompt templates
-├── examples/           # Usage examples and demos
-├── tests/              # Unit and integration tests
+├── scripts/            # Automation scripts
+├── templates/          # Output templates
+├── examples/           # Usage examples
 └── docs/               # Extended documentation
-    ├── setup.md        # Setup guide
-    ├── api.md          # API reference
-    └── faq.md          # Frequently asked questions
 ```
 
 ---
 
 ## Examples
 
-### Basic Usage
+### Basic
 
 ```bash
-# Activate in Claude Code
-claude --skill mirofish-prediction-simulator "your task here"
+# Simple task
+claude --skill mirofish-prediction-simulator "prediction task"
 
-# With options
-claude --skill mirofish-prediction-simulator --verbose "detailed task"
+# Verbose
+claude --skill mirofish-prediction-simulator --verbose "detailed simulator task"
 ```
 
-### Advanced Workflow
+### Advanced Pipeline
 
 ```bash
-# Chain with other skills
+# Chain skills
 claude --skill mirofish-prediction-simulator "step 1" | claude --skill summarize
 
-# Batch processing
-for item in list; do
+# Batch run
+for item in $(cat list.txt); do
   claude --skill mirofish-prediction-simulator "process $item"
 done
 ```
@@ -142,18 +143,18 @@ done
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Auth fails | Invalid/expired API key | Re-export key in shell profile |
-| Timeout error | Network latency or large payload | Increase TIMEOUT value |
-| Empty output | Prompt too vague | Add more context to request |
-| Rate limit hit | Too many requests | Add delay between calls |
-| Model error | Unsupported model version | Update MODEL variable |
+| Auth fails | Invalid API key | Re-export key in shell profile |
+| Timeout | Network or large payload | Increase TIMEOUT value |
+| Empty output | Prompt too vague | Add more context |
+| Rate limit | Too many requests | Add delay between calls |
+| Model error | Unsupported version | Update MODEL variable |
 | Import error | Missing dependency | Run pip install -r requirements.txt |
 
 ---
 
 ## Comparison
 
-| Feature | This Skill | Alternative A | Alternative B |
+| Feature | This Skill | Alt A | Alt B |
 |---|---|---|---|
 | Claude Code native | ✅ | ❌ | ✅ |
 | Auto-activation | ✅ | ✅ | ❌ |
@@ -163,23 +164,21 @@ done
 
 ---
 
-## Contributing
-
-1. Fork this repo
-2. Create feature branch: `git checkout -b feat/your-feature`
-3. Commit changes: `git commit -m 'feat: add feature'`
-4. Push: `git push origin feat/your-feature`
-5. Open PR
-
----
-
 ## Changelog
 
 | Version | Changes |
 |---|---|
-| v2.0 | Major refactor, Claude 4 support |
-| v1.5 | Added auto-activation keywords |
+| v2.0 | Claude 4 support, auto-activation |
+| v1.5 | Added keyword triggers |
 | v1.0 | Initial release |
+
+---
+
+## Contributing
+
+1. Fork → feature branch → commit → PR
+2. Follow conventional commits: `feat:`, `fix:`, `docs:`
+3. Add tests for new features
 
 ---
 
@@ -191,7 +190,7 @@ done
 
 ## 📜 License
 
-MIT — free to use, modify, and distribute.
+MIT — free to use, modify, distribute.
 
 ---
 
