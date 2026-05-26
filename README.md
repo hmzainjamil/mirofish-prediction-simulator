@@ -1,408 +1,203 @@
-# mirofish-prediction-simulator
+<div align="center">
 
-![badge](https://img.shields.io/badge/Claude-Code-blue?style=flat) ![badge](https://img.shields.io/badge/AI-Powered-orange?style=flat) ![badge](https://img.shields.io/badge/Open-Source-green?style=flat)
+<img src="./static/image/MiroFish_logo_compressed.jpeg" alt="MiroFish Logo" width="75%"/>
 
-> MiroFish scenario prediction and simulation engine
+<a href="https://trendshift.io/repositories/16144" target="_blank"><img src="https://trendshift.io/api/badge/repositories/16144" alt="666ghj%2FMiroFish | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 
----
+简洁通用的群体智能引擎，预测万物
+</br>
+<em>A Simple and Universal Swarm Intelligence Engine, Predicting Anything</em>
 
-## CONCEPTS
+<a href="https://www.shanda.com/" target="_blank"><img src="./static/image/shanda_logo.png" alt="666ghj%2MiroFish | Shanda" height="40"/></a>
 
-| Concept | Description | Source |
-|---------|-------------|--------|
-| Core — MiroFish foundation for mirofish workflows | Core foundation — the primary abstraction this repo builds on | [docs](#) |
-| Execution — task decomposition and mirofish routing | Execution layer — how tasks get decomposed and routed | [docs](#) |
-| Integration — Claude Code + prediction connectivity | Integration layer — connecting to external tools and APIs | [docs](#) |
-| Orchestration — multi-agent coordination and handoffs | Orchestration — multi-agent coordination and handoffs | [docs](#) |
-| Memory — persistent context across sessions | Memory — persistent context across sessions | [docs](#) |
-| Routing — intent-based skill activation | Routing — intent-based skill activation and deactivation | [docs](#) |
-| Output — structured artifacts and deliverables | Output — structured artifacts, reports, and deliverables | [docs](#) |
-| Observability — logging, tracing, audit trails | Observability — logging, tracing, and audit trails | [docs](#) |
+[![GitHub Stars](https://img.shields.io/github/stars/666ghj/MiroFish?style=flat-square&color=DAA520)](https://github.com/666ghj/MiroFish/stargazers)
+[![GitHub Watchers](https://img.shields.io/github/watchers/666ghj/MiroFish?style=flat-square)](https://github.com/666ghj/MiroFish/watchers)
+[![GitHub Forks](https://img.shields.io/github/forks/666ghj/MiroFish?style=flat-square)](https://github.com/666ghj/MiroFish/network)
+[![Docker](https://img.shields.io/badge/Docker-Build-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/666ghj/MiroFish)
 
----
+[![Discord](https://img.shields.io/badge/Discord-Join-5865F2?style=flat-square&logo=discord&logoColor=white)](http://discord.gg/ePf5aPaHnA)
+[![X](https://img.shields.io/badge/X-Follow-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/mirofish_ai)
+[![Instagram](https://img.shields.io/badge/Instagram-Follow-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://www.instagram.com/mirofish_ai/)
 
-## 🔥 Hot Commands
+[English](./README.md) | [中文文档](./README-ZH.md)
+
+</div>
+
+## ⚡ Overview
+
+**MiroFish** is a next-generation AI prediction engine powered by multi-agent technology. By extracting seed information from the real world (such as breaking news, policy drafts, or financial signals), it automatically constructs a high-fidelity parallel digital world. Within this space, thousands of intelligent agents with independent personalities, long-term memory, and behavioral logic freely interact and undergo social evolution. You can inject variables dynamically from a "God's-eye view" to precisely deduce future trajectories — **rehearse the future in a digital sandbox, and win decisions after countless simulations**.
+
+> You only need to: Upload seed materials (data analysis reports or interesting novel stories) and describe your prediction requirements in natural language</br>
+> MiroFish will return: A detailed prediction report and a deeply interactive high-fidelity digital world
+
+### Our Vision
+
+MiroFish is dedicated to creating a swarm intelligence mirror that maps reality. By capturing the collective emergence triggered by individual interactions, we break through the limitations of traditional prediction:
+
+- **At the Macro Level**: We are a rehearsal laboratory for decision-makers, allowing policies and public relations to be tested at zero risk
+- **At the Micro Level**: We are a creative sandbox for individual users — whether deducing novel endings or exploring imaginative scenarios, everything can be fun, playful, and accessible
+
+From serious predictions to playful simulations, we let every "what if" see its outcome, making it possible to predict anything.
+
+## 🌐 Live Demo
+
+Welcome to visit our online demo environment and experience a prediction simulation on trending public opinion events we've prepared for you: [mirofish-live-demo](https://666ghj.github.io/mirofish-demo/)
+
+## 📸 Screenshots
+
+<div align="center">
+<table>
+<tr>
+<td><img src="./static/image/Screenshot/运行截图1.png" alt="Screenshot 1" width="100%"/></td>
+<td><img src="./static/image/Screenshot/运行截图2.png" alt="Screenshot 2" width="100%"/></td>
+</tr>
+<tr>
+<td><img src="./static/image/Screenshot/运行截图3.png" alt="Screenshot 3" width="100%"/></td>
+<td><img src="./static/image/Screenshot/运行截图4.png" alt="Screenshot 4" width="100%"/></td>
+</tr>
+<tr>
+<td><img src="./static/image/Screenshot/运行截图5.png" alt="Screenshot 5" width="100%"/></td>
+<td><img src="./static/image/Screenshot/运行截图6.png" alt="Screenshot 6" width="100%"/></td>
+</tr>
+</table>
+</div>
+
+## 🎬 Demo Videos
+
+### 1. Wuhan University Public Opinion Simulation + MiroFish Project Introduction
+
+<div align="center">
+<a href="https://www.bilibili.com/video/BV1VYBsBHEMY/" target="_blank"><img src="./static/image/武大模拟演示封面.png" alt="MiroFish Demo Video" width="75%"/></a>
+
+Click the image to watch the complete demo video for prediction using BettaFish-generated "Wuhan University Public Opinion Report"
+</div>
+
+### 2. Dream of the Red Chamber Lost Ending Simulation
+
+<div align="center">
+<a href="https://www.bilibili.com/video/BV1cPk3BBExq" target="_blank"><img src="./static/image/红楼梦模拟推演封面.jpg" alt="MiroFish Demo Video" width="75%"/></a>
+
+Click the image to watch MiroFish's deep prediction of the lost ending based on hundreds of thousands of words from the first 80 chapters of "Dream of the Red Chamber"
+</div>
+
+> **Financial Prediction**, **Political News Prediction** and more examples coming soon...
+
+## 🔄 Workflow
+
+1. **Graph Building**: Seed extraction & Individual/collective memory injection & GraphRAG construction
+2. **Environment Setup**: Entity relationship extraction & Persona generation & Agent configuration injection
+3. **Simulation**: Dual-platform parallel simulation & Auto-parse prediction requirements & Dynamic temporal memory updates
+4. **Report Generation**: ReportAgent with rich toolset for deep interaction with post-simulation environment
+5. **Deep Interaction**: Chat with any agent in the simulated world & Interact with ReportAgent
+
+## 🚀 Quick Start
+
+### Option 1: Source Code Deployment (Recommended)
+
+#### Prerequisites
+
+| Tool | Version | Description | Check Installation |
+|------|---------|-------------|-------------------|
+| **Node.js** | 18+ | Frontend runtime, includes npm | `node -v` |
+| **Python** | ≥3.11, ≤3.12 | Backend runtime | `python --version` |
+| **uv** | Latest | Python package manager | `uv --version` |
+
+#### 1. Configure Environment Variables
 
 ```bash
-# Quick start
-python3 main.py --task "mirofish task here"
-
-# Power user shortcut
-python3 main.py --mirofish --fast
-
-# Batch execution
-python3 main.py --batch tasks.txt --parallel 4
-
-# Status check
-python3 main.py --status
-```
-
-■ tip: Run with `--model qwen2.5:7b` for zero-cost local execution
-
----
-
-## ☠️ STARTUPS / BUSINESSES
-
-Use mirofish-prediction-simulator to automate mirofish scenario prediction and simulation engine. Perfect for agencies, freelancers, and AI-first teams running mirofish workflows at scale.
-
----
-
-## Features
-
-- ✅ MiroFish scenario prediction and simulation engine
-- ✅ Claude Code native integration
-- ✅ Ollama / Groq / Gemini model support
-- ✅ Batch processing with parallelism
-- ✅ Intent-based auto-activation
-- ✅ Zero-cost local execution path
-
----
-
-## Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/hmzainjamil/mirofish-prediction-simulator.git
-cd mirofish-prediction-simulator
-
-# Install dependencies
-pip install -r requirements.txt  # or npm install
-
-# Configure environment
+# Copy the example configuration file
 cp .env.example .env
-# Edit .env with your API keys
 
-# Verify installation
-python3 main.py --verify
+# Edit the .env file and fill in the required API keys
 ```
 
----
+**Required Environment Variables:**
 
-## Quick Start
+```env
+# LLM API Configuration (supports any LLM API with OpenAI SDK format)
+# Recommended: Alibaba Qwen-plus model via Bailian Platform: https://bailian.console.aliyun.com/
+# High consumption, try simulations with fewer than 40 rounds first
+LLM_API_KEY=your_api_key
+LLM_BASE_URL=https://dashscope.aliyuncs.com/compatible-mode/v1
+LLM_MODEL_NAME=qwen-plus
+
+# Zep Cloud Configuration
+# Free monthly quota is sufficient for simple usage: https://app.getzep.com/
+ZEP_API_KEY=your_zep_api_key
+```
+
+#### 2. Install Dependencies
 
 ```bash
-# Minimal working example
-python3 main.py --input "your task here"
-
-# With options
-python3 main.py --input "task" --model gpt-4 --output ~/Downloads/result.json
-
-# Batch mode
-python3 main.py --batch tasks.txt --parallel 4
+# One-click installation of all dependencies (root + frontend + backend)
+npm run setup:all
 ```
 
----
-
-## Architecture
-
-```
-┌─────────────────────────────────────────────────────────┐
-│                      Input Layer                         │
-│  CLI / API / Webhook / Scheduled trigger                 │
-└───────────────────────┬─────────────────────────────────┘
-                        │
-┌───────────────────────▼─────────────────────────────────┐
-│                   Orchestration Layer                    │
-│  Intent detection → Skill routing → Agent dispatch      │
-└───────────────────────┬─────────────────────────────────┘
-                        │
-┌───────────────────────▼─────────────────────────────────┐
-│                   Execution Layer                        │
-│  Parallel agents · Tool calls · External APIs           │
-└───────────────────────┬─────────────────────────────────┘
-                        │
-┌───────────────────────▼─────────────────────────────────┐
-│                    Output Layer                          │
-│  Structured results · Files · Notifications             │
-└─────────────────────────────────────────────────────────┘
-```
-
----
-
-## Configuration
-
-| Option | Default | Description |
-|--------|---------|-------------|
-| `MODEL` | `qwen2.5:7b` | LLM model to use |
-| `PARALLEL` | `4` | Max parallel workers |
-| `TIMEOUT` | `120` | Per-task timeout (seconds) |
-| `OUTPUT_DIR` | `~/Downloads` | Default output directory |
-| `LOG_LEVEL` | `INFO` | Logging verbosity |
-| `CACHE` | `true` | Enable response caching |
-| `MAX_RETRIES` | `3` | Auto-retry on failure |
-| `API_KEY` | — | Provider API key |
-
----
-
-## Examples
-
-### Example 1 — Basic Usage
-
-```python
-from main import run
-
-result = run(
-    task="Analyze this dataset",
-    model="qwen2.5:7b",
-    output="~/Downloads/analysis.json"
-)
-print(result.summary)
-```
-
-### Example 2 — Batch Processing
-
-```python
-tasks = [
-    "Summarize document A",
-    "Extract entities from B",
-    "Compare A and B",
-]
-results = run_batch(tasks, parallel=3)
-for r in results:
-    print(r.title, r.status)
-```
-
-### Example 3 — Integration with Claude Code
+Or install step by step:
 
 ```bash
-# Add to CLAUDE.md
-echo "Auto-activate: mirofish, prediction" >> ~/.claude/CLAUDE.md
+# Install Node dependencies (root + frontend)
+npm run setup
 
-# Or load skill directly
-/load-skill mirofish-prediction-simulator
+# Install Python dependencies (backend, auto-creates virtual environment)
+npm run setup:backend
 ```
 
----
-
-## Comparison
-
-| Feature | This Repo | Alternative A | Alternative B |
-|---------|-----------|--------------|--------------|
-| Speed | ⚡ Fast | 🐢 Slow | ⚡ Fast |
-| Cost | Free | Paid | Freemium |
-| Local | ✅ Yes | ❌ No | ✅ Yes |
-| Multi-agent | ✅ Yes | ❌ No | ❌ No |
-| Memory | ✅ Yes | ✅ Yes | ❌ No |
-| Streaming | ✅ Yes | ❌ No | ✅ Yes |
-| CLI | ✅ Yes | ✅ Yes | ❌ No |
-
----
-
-## Troubleshooting
-
-### Issue: Command not found
-```bash
-# Add to PATH
-export PATH="$PATH:$(pwd)/bin"
-source ~/.zshrc
-```
-
-### Issue: API key not set
-```bash
-echo 'export API_KEY="your-key-here"' >> ~/.zshrc
-source ~/.zshrc
-```
-
-### Issue: Model timeout
-```bash
-# Increase timeout
-export TIMEOUT=300
-# Or use faster model
-python3 main.py --model qwen2.5:7b
-```
-
-### Issue: Out of memory
-```bash
-# Reduce parallel workers
-python3 main.py --parallel 1
-# Or use smaller model
-python3 main.py --model llama3.2:3b
-```
-
----
-
-## API Reference
-
-### `run(task, model, output)`
-Execute a single task.
-
-| Param | Type | Required | Description |
-|-------|------|----------|-------------|
-| `task` | `str` | ✅ | Task description |
-| `model` | `str` | ❌ | LLM model (default: auto) |
-| `output` | `str` | ❌ | Output path |
-| `timeout` | `int` | ❌ | Timeout in seconds |
-
-Returns: `Result` object with `.summary`, `.data`, `.status`
-
-### `run_batch(tasks, parallel)`
-Execute multiple tasks in parallel.
-
-| Param | Type | Required | Description |
-|-------|------|----------|-------------|
-| `tasks` | `list[str]` | ✅ | List of task strings |
-| `parallel` | `int` | ❌ | Max concurrent (default: 4) |
-| `model` | `str` | ❌ | LLM model |
-
-Returns: `list[Result]`
-
----
-
-## Workflow Integration
-
-### n8n
-```json
-{
-  "nodes": [
-    {
-      "type": "n8n-nodes-base.executeCommand",
-      "parameters": {
-        "command": "python3 /path/to/main.py --input '{{ $json.input }}'"
-      }
-    }
-  ]
-}
-```
-
-### Make.com / Zapier
-Use HTTP Request module → POST to local webhook endpoint.
-
-### Claude Code Hook
-```json
-{
-  "hooks": {
-    "PostToolUse": [{"matcher": "mirofish", "command": "python3 ~/repos/mirofish-prediction-simulator/main.py"}]
-  }
-}
-```
-
----
-
-## Performance
-
-| Metric | Value |
-|--------|-------|
-| Avg latency (local) | < 2s |
-| Avg latency (cloud) | < 5s |
-| Throughput (batch) | 50 tasks/min |
-| Memory footprint | < 512MB |
-| Cold start | < 3s |
-| Cache hit rate | ~70% |
-
----
-
-## Roadmap
-
-- [x] Core execution engine
-- [x] CLI interface
-- [x] Batch processing
-- [x] Multi-agent support
-- [ ] Web UI dashboard
-- [ ] Real-time streaming API
-- [ ] Plugin marketplace
-- [ ] Mobile companion app
-- [ ] Enterprise SSO
-
----
-
-## Contributing
+#### 3. Start Services
 
 ```bash
-# Fork and clone
-gh repo fork hmzainjamil/mirofish-prediction-simulator --clone
-cd mirofish-prediction-simulator
-
-# Create feature branch
-git checkout -b feat/your-feature
-
-# Make changes, then test
-python3 -m pytest tests/
-
-# Submit PR
-gh pr create --title "feat: your feature" --body "Description"
+# Start both frontend and backend (run from project root)
+npm run dev
 ```
 
----
+**Service URLs:**
+- Frontend: `http://localhost:3000`
+- Backend API: `http://localhost:5001`
 
-## Changelog
-
-### v2.0.0
-- Multi-agent orchestration
-- Intent-based skill routing
-- 50% faster batch processing
-
-### v1.5.0
-- Added streaming output
-- Memory persistence
-- n8n integration
-
-### v1.0.0
-- Initial release
-- Core CLI
-- Basic agent execution
-
----
-
-## License
-
-MIT — use freely, attribution appreciated.
-
----
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=hmzainjamil/mirofish-prediction-simulator&type=Date)](https://star-history.com/#hmzainjamil/mirofish-prediction-simulator&Date)
-
----
-
-*Built with Claude Code · Powered by open-source LLMs · Zero vendor lock-in*
-
----
-
-## Related Projects
-
-| Repo | Description | Stars |
-|------|-------------|-------|
-| [hmz-claude-code-best-practice](https://github.com/hmzainjamil/hmz-claude-code-best-practice) | Best practices for Claude Code | ⭐ |
-| [G0DM0D3](https://github.com/hmzainjamil/G0DM0D3) | AI agency OS | ⭐ |
-| [agent-skills](https://github.com/hmzainjamil/agent-skills) | Skill library | ⭐ |
-| [awesome-agentic-patterns](https://github.com/hmzainjamil/awesome-agentic-patterns) | Agentic design patterns | ⭐ |
-
----
-
-## Security
-
-- Never commit API keys to version control
-- Use `.env` files (added to `.gitignore`)
-- Rotate keys regularly
-- Use least-privilege API scopes
-- Audit tool permissions before granting
+**Start Individually:**
 
 ```bash
-# Check for secrets before commit
-git diff --staged | grep -i "key\|secret\|token\|password"
+npm run backend   # Start backend only
+npm run frontend  # Start frontend only
 ```
 
----
+### Option 2: Docker Deployment
 
-## FAQ
+```bash
+# 1. Configure environment variables (same as source deployment)
+cp .env.example .env
 
-**Q: Does this work offline?**
-A: Yes — local models via Ollama require no internet.
+# 2. Pull image and start
+docker compose up -d
+```
 
-**Q: What models are supported?**
-A: Any Ollama model, OpenAI-compatible API, Groq, DeepSeek, Gemini.
+Reads `.env` from root directory by default, maps ports `3000 (frontend) / 5001 (backend)`
 
-**Q: How do I add custom tools?**
-A: Drop a `.py` file in `tools/` directory — auto-discovered on startup.
+> Mirror address for faster pulling is provided as comments in `docker-compose.yml`, replace if needed.
 
-**Q: Can I use this in production?**
-A: Yes — add rate limiting and error handling for production workloads.
+## 📬 Join the Conversation
 
-**Q: Is there a cloud-hosted version?**
-A: Self-host only. No SaaS version.
+<div align="center">
+<img src="./static/image/QQ群.png" alt="QQ Group" width="60%"/>
+</div>
 
+&nbsp;
 
----
+The MiroFish team is recruiting full-time/internship positions. If you're interested in multi-agent simulation and LLM applications, feel free to send your resume to: **mirofish@shanda.com**
 
-*Made by [hmzainjamil](https://github.com/hmzainjamil) — star if useful*
+## 📄 Acknowledgments
+
+**MiroFish has received strategic support and incubation from Shanda Group!**
+
+MiroFish's simulation engine is powered by **[OASIS (Open Agent Social Interaction Simulations)](https://github.com/camel-ai/oasis)**, We sincerely thank the CAMEL-AI team for their open-source contributions!
+
+## 📈 Project Statistics
+
+<a href="https://www.star-history.com/#666ghj/MiroFish&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=666ghj/MiroFish&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=666ghj/MiroFish&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=666ghj/MiroFish&type=date&legend=top-left" />
+ </picture>
+</a>
