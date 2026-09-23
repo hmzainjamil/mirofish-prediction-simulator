@@ -1,5 +1,9 @@
 # mirofish-prediction-simulator
 
+<!-- HMZ PORTFOLIO STANDARD -->
+> Portfolio status: active · Visibility: public · Source of truth: current repository source.
+<!-- END HMZ PORTFOLIO STANDARD -->
+
 > **Swarm-intelligence mirror for scenario simulation and predictive modeling** — Upload seed material, describe the question in plain English, get a high-fidelity parallel society that runs the future for you.
 
 <div align="center">
