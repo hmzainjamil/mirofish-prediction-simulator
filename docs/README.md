@@ -14,7 +14,7 @@ Use the root README for scope, local development, configuration, and evidence bo
 
 ## Documentation gaps
 
-No separately maintained threat model, privacy/data-flow guide, deployment procedure for the checked-out source, release process, operational runbook, or forecast evaluation report was identified in the inspected tree. Add these only with an accountable maintainer and repository-backed evidence.
+[SECURITY.md](../SECURITY.md) records the inspected provider/data boundaries and handling cautions. A separate threat model, deployment procedure, release process, operational runbook, and forecast evaluation report were not identified.
 
 ## Evidence boundary
 
