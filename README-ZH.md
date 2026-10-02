@@ -48,6 +48,7 @@ MiroFish 是一个网页应用，可根据输入材料构建多 Agent 模拟环�
 ## 文档
 
 - [文档索引](docs/README.md)
+- [安全与数据处理](SECURITY.md)
 - [后端 API 模块](backend/app/api/)
 - [模拟服务](backend/app/services/)
 - [后端配置](backend/app/config.py)
