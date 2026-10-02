@@ -54,6 +54,8 @@ The checked-in Docker Compose file pulls ghcr.io/666ghj/mirofish:latest; it does
 - [Environment template](.env.example)
 - [License](LICENSE)
 
+- [Security and data handling](SECURITY.md)
+
 ## License
 
 The root [LICENSE](LICENSE) contains the GNU Affero General Public License version 3. See the license text for use and distribution terms.
