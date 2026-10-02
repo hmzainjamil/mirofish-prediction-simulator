@@ -1,6 +1,6 @@
 # Documentation index
 
-Use the root README for scope, local development, configuration, and evidence boundaries.
+Use the [English root README](../README.md) for scope, local development, configuration, and evidence boundaries.\n\n- [中文 README](../README-ZH.md): Chinese repository overview and setup notes.
 
 ## Technical references
 
